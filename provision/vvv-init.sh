@@ -41,6 +41,13 @@ if [[ ! -d "${VVV_PATH_TO_SITE}/public/core/wp-load.php" ]]; then
 
 	noroot wp core ${INSTALL_COMMAND} --url="${DOMAIN}" --quiet --title="${SITE_TITLE}" --admin_name=admin --admin_email="admin@local.test" --admin_password="password"
 
+	if [ "${WP_TYPE}" = "subdomain" ]; then
+		sed -i "s#MULTISITE=false#MULTISITE=true#" "${VVV_PATH_TO_SITE}/.env"
+	elif [ "${WP_TYPE}" = "subdirectory" ]; then
+		sed -i "s#MULTISITE=false#MULTISITE=true#" "${VVV_PATH_TO_SITE}/.env"
+		sed -i "s#SUBDOMAIN_INSTALL=true#SUBDOMAIN_INSTALL=false#" "${VVV_PATH_TO_SITE}/.env"
+	fi
+
 	noroot wp comment delete 1 --force --quiet
 	noroot wp post delete 1 --force --quiet
 else
