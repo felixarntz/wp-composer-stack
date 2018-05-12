@@ -39,7 +39,7 @@ if [[ ! -d "${VVV_PATH_TO_SITE}/public/core/wp-load.php" ]]; then
 		INSTALL_COMMAND="install"
 	fi
 
-	noroot wp core ${INSTALL_COMMAND} --url="${DOMAIN}" --quiet --title="${SITE_TITLE}" --admin_name=admin --admin_email="admin@local.dev" --admin_password="password"
+	noroot wp core ${INSTALL_COMMAND} --url="${DOMAIN}" --quiet --title="${SITE_TITLE}" --admin_name=admin --admin_email="admin@local.test" --admin_password="password"
 
 	noroot wp comment delete 1 --force --quiet
 	noroot wp post delete 1 --force --quiet
