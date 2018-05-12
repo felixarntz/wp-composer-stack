@@ -132,12 +132,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/felixarntz/wp-composer-stack-lib.git",
-                "reference": "713bd6dd93f3c7545cd7fb81430f371e54d0ca4b"
+                "reference": "8ef4ede10314f003b57964ed57865ce4bc6d2ed2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/felixarntz/wp-composer-stack-lib/zipball/713bd6dd93f3c7545cd7fb81430f371e54d0ca4b",
-                "reference": "713bd6dd93f3c7545cd7fb81430f371e54d0ca4b",
+                "url": "https://api.github.com/repos/felixarntz/wp-composer-stack-lib/zipball/8ef4ede10314f003b57964ed57865ce4bc6d2ed2",
+                "reference": "8ef4ede10314f003b57964ed57865ce4bc6d2ed2",
                 "shasum": ""
             },
             "require": {
@@ -170,7 +170,7 @@
                 "wordpress",
                 "wp"
             ],
-            "time": "2018-05-12T13:44:28+00:00"
+            "time": "2018-05-12 14:55:01"
         },
         {
             "name": "johnpbloch/wordpress",
