@@ -23,7 +23,7 @@ touch ${VVV_PATH_TO_SITE}/log/access.log
 if [[ ! -d "${VVV_PATH_TO_SITE}/public/core/wp-load.php" ]]; then
 	echo "Downloading WordPress and dependencies..."
 	cd ${VVV_PATH_TO_SITE}
-	noroot composer install --prefer-source
+	noroot composer install --no-dev
 
 	echo "Setting up .env file..."
 	cp -f "${VVV_PATH_TO_SITE}/provision/.env.tmpl" "${VVV_PATH_TO_SITE}/.env"
@@ -53,7 +53,7 @@ if [[ ! -d "${VVV_PATH_TO_SITE}/public/core/wp-load.php" ]]; then
 else
 	echo "Updating WordPress and dependencies..."
 	cd ${VVV_PATH_TO_SITE}
-	noroot composer update --prefer-source
+	noroot composer update --no-dev
 fi
 
 cp -f "${VVV_PATH_TO_SITE}/provision/vvv-nginx.conf.tmpl" "${VVV_PATH_TO_SITE}/provision/vvv-nginx.conf"
