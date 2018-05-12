@@ -1,0 +1,58 @@
+{
+  "name": "felixarntz/wp-composer-stack",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "description": "A modern WordPress stack with Composer.",
+  "homepage": "https://github.com/felixarntz/wp-composer-stack/",
+  "authors": [
+    {
+      "name": "Felix Arntz",
+      "email": "felix-arntz@leaves-and-love.net",
+      "homepage": "http://leaves-and-love.net"
+    }
+  ],
+  "keywords": [
+    "wordpress", "stack", "composer", "vagrant", "wp"
+  ],
+  "support": {
+    "issues": "https://github.com/felixarntz/wp-composer-stack/issues"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "felixarntz/wp-composer-stack-lib": "dev-master",
+    "composer/installers": "~1.0",
+    "vlucas/phpdotenv": "2.0.1",
+    "johnpbloch/wordpress": "4.9.5",
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-plugin/simple-analytics": "1.1.1",
+    "wpackagist-plugin/user-feedback": "1.1.1",
+    "wpackagist-plugin/wp-user-profiles": "2.1.0",
+    "wpackagist-plugin/wp-maintenance-mode": "2.1.2",
+    "wpackagist-theme/twentyseventeen": "1.1"
+  },
+  "extra": {
+    "installer-paths": {
+      "public/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "public/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "public/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "public/core",
+    "constants": {
+      "wp": {
+        "env": "production",
+        "default_theme": "twentyseventeen"
+      }
+    }
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs --ignore=public/core/,vendor/ -n -s ."
+    ]
+  }
+}

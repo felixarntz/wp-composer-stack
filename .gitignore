@@ -1,0 +1,64 @@
+# Application
+public/app/debug.log
+public/app/mu-plugins/*/
+public/app/plugins/*
+!public/app/plugins/.gitkeep
+public/app/themes/*
+!public/app/themes/.gitkeep
+public/app/upgrade
+public/app/uploads/*
+!public/app/uploads/.gitkeep
+
+# Ignore Exceptions
+!public/app/mu-plugins/wp-composer-stack.php
+
+# WordPress
+public/core
+public/.htaccess
+
+# WP-CLI
+db-sync
+sql-dump-*.sql
+
+# Dotenv
+.env
+.env.*
+!.env.tmpl
+!.env.example
+
+# VVV
+vvv-nginx.conf
+log/*
+
+# Vendor (e.g. Composer)
+vendor/*
+!vendor/.gitkeep
+
+# Node Package Manager
+node_modules
+
+# Vagrant
+bin
+.vagrant
+
+# IDEs
+*.pydevproject
+.project
+.metadata
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch
+.cproject
+.buildpath
+nbproject/
+
+# OSes
+[Tt]humbs.db
+[Dd]esktop.ini
+*.DS_store
+.DS_store?
