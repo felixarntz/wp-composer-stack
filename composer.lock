@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f47f2e2edee0ecb423de66a221c6fccd",
+    "content-hash": "8ec3aa0617d9f2afbc056100e15e00c7",
     "packages": [
         {
             "name": "composer/installers",
@@ -132,12 +132,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/felixarntz/wp-composer-stack-lib.git",
-                "reference": "8ef4ede10314f003b57964ed57865ce4bc6d2ed2"
+                "reference": "6b1251cf6c23784f46c1d3a1e973fbcc0cf18719"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/felixarntz/wp-composer-stack-lib/zipball/8ef4ede10314f003b57964ed57865ce4bc6d2ed2",
-                "reference": "8ef4ede10314f003b57964ed57865ce4bc6d2ed2",
+                "url": "https://api.github.com/repos/felixarntz/wp-composer-stack-lib/zipball/6b1251cf6c23784f46c1d3a1e973fbcc0cf18719",
+                "reference": "6b1251cf6c23784f46c1d3a1e973fbcc0cf18719",
                 "shasum": ""
             },
             "require": {
@@ -170,27 +170,27 @@
                 "wordpress",
                 "wp"
             ],
-            "time": "2018-05-12T14:55:01+00:00"
+            "time": "2018-12-06 19:50:22"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.9.8",
+            "version": "5.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "50323f9b91d7689d615b4af02caf9d80584b1cfc"
+                "reference": "89653ef69a268f2afa489df93941567e60a131e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/50323f9b91d7689d615b4af02caf9d80584b1cfc",
-                "reference": "50323f9b91d7689d615b4af02caf9d80584b1cfc",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/89653ef69a268f2afa489df93941567e60a131e6",
+                "reference": "89653ef69a268f2afa489df93941567e60a131e6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "provide": {
-                "wordpress/core-implementation": "4.9.8"
+                "wordpress/core-implementation": "5.0.x-dev"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -210,7 +210,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-08-02T21:48:32+00:00"
+            "time": "2018-12-06 19:57:13"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -465,16 +465,16 @@
             "homepage": "https://wordpress.org/plugins/wp-user-profiles/"
         },
         {
-            "name": "wpackagist-theme/twentyseventeen",
-            "version": "1.7",
+            "name": "wpackagist-theme/twentynineteen",
+            "version": "1.0",
             "source": {
                 "type": "svn",
-                "url": "https://themes.svn.wordpress.org/twentyseventeen/",
-                "reference": "1.7"
+                "url": "https://themes.svn.wordpress.org/twentynineteen/",
+                "reference": "1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyseventeen.1.7.zip",
+                "url": "https://downloads.wordpress.org/theme/twentynineteen.1.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -482,14 +482,15 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/twentyseventeen/"
+            "homepage": "https://wordpress.org/themes/twentynineteen/"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "felixarntz/wp-composer-stack-lib": 20
+        "felixarntz/wp-composer-stack-lib": 20,
+        "johnpbloch/wordpress-core": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
