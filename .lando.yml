@@ -1,4 +1,4 @@
-name: wp-composer-stack
+name: wpcomposerstack
 
 recipe: wordpress
 
@@ -8,7 +8,29 @@ config:
   webroot: public
   database: mariadb
   xdebug: false
+
+proxy:
+  node:
+    - wpcomposerstack.lndo.site:3000
+
+services:
+  node:
+    type: node:8.9
+    ssl: true
+    globals:
+      gulp-cli: "latest"
+    overrides:
+      services:
+        ports:
+          - "3000:3000"
+
 tooling:
+  npm:
+    service: appserver
+  node:
+    service: appserver
+  gulp:
+    service: appserver
   composer:
     service: appserver
   wp:
