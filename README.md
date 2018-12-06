@@ -4,3 +4,14 @@
 # WP Composer Stack
 
 A modern WordPress stack with Composer.
+
+## Setup
+
+* Make sure you have all requirements installed.
+* Run `lando start`.
+* Run `lando wp-install`.
+
+## Requirements
+
+* Install Lando: `brew cask install lando`
+* Trust the Lando SSL certificate: `sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/.lando/certs/lndo.site.pem`

@@ -1,0 +1,19 @@
+name: wp-composer-stack
+
+recipe: wordpress
+
+config:
+  php: '7.2'
+  via: nginx
+  webroot: public
+  database: mariadb
+  xdebug: false
+tooling:
+  composer:
+    service: appserver
+  wp:
+    service: appserver
+  wp-install:
+    description: Install WordPress and dependencies
+    cmd: ./config/wp-install.sh
+    service: appserver
