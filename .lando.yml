@@ -9,10 +9,6 @@ config:
   database: mariadb
   xdebug: false
 
-proxy:
-  node:
-    - wpcomposerstack.lndo.site:3000
-
 services:
   node:
     type: node:8.9
