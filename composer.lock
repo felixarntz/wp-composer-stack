@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0ca4e5d7220e240b3f660c8426a8bf48",
+    "content-hash": "8b36f75d8ff7ef82667a5a7f1d5a16e2",
     "packages": [
         {
             "name": "composer/installers",
@@ -174,16 +174,16 @@
         },
         {
             "name": "roots/wordpress",
-            "version": "5.0.1",
+            "version": "5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/WordPress.git",
-                "reference": "5.0.1"
+                "reference": "5.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.0.1",
-                "reference": "5.0.1",
+                "url": "https://api.github.com/repos/WordPress/WordPress/zipball/5.0.2",
+                "reference": "5.0.2",
                 "shasum": null
             },
             "require": {
@@ -208,7 +208,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-12-13T04:12:29+00:00"
+            "time": "2018-12-19T23:37:27+00:00"
         },
         {
             "name": "roots/wordpress-core-installer",
